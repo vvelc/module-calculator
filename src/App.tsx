@@ -166,7 +166,7 @@ export default function App() {
                 realScreenHeight, realScreenWidth
             )
         );
-    }, [realScreenHeight, realScreenWidth])
+    }, [moduleSize, realScreenHeight, realScreenWidth])
     // // On Init Component
     // useEffect(() => {
     //     initHeight();
