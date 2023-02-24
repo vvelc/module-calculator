@@ -21,7 +21,8 @@ type Props = {
     handleDesiredScreenHeightChange: (size: number) => void;
     desiredScreenWidth: number;
     handleDesiredScreenWidthChange: (size: number) => void;
-    moduleSizes: Map<string, ModuleSizeProps>;
+    moduleSizes: Map<string, ModuleProps>;
+    handleResetDimensions: () => void;
 };
 
 export default function ModuleSizeForm({
@@ -31,7 +32,8 @@ export default function ModuleSizeForm({
     handleDesiredScreenHeightChange,
     desiredScreenWidth,
     handleDesiredScreenWidthChange,
-    moduleSizes
+    moduleSizes,
+    handleResetDimensions,
 }: Props) {
 
     return (
@@ -62,9 +64,9 @@ export default function ModuleSizeForm({
                             label="Panel Size Mode"
                             onChange={(event) => handleModuleSizeChange(event.target.value)}
                         >
-                            {Array.from(moduleSizes.keys()).map((x, i) => (
-                                <MenuItem value={x} key={i}>
-                                    {x}
+                            {Array.from(moduleSizes).map((x, i) => (
+                                <MenuItem value={x[0]} key={i}>
+                                    {x[0]} ({x[1].type})
                                 </MenuItem>
                             ))}
                         </Select>
@@ -109,8 +111,9 @@ export default function ModuleSizeForm({
                         variant="contained"
                         color="primary"
                         fullWidth={false}
+                        onClick={() => handleResetDimensions()}
                     >
-                        Calculate
+                        Reset
                     </Button>
                 </Stack>
             </Container>
