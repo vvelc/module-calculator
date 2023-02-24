@@ -1,2 +1,3 @@
-declare type ModuleSizeProps = { height: number, width: number }
-declare type ModuleSize = [string, ModuleSizeProps]
+declare type ModuleType = "screen" | "pallet";
+declare type ModuleProps = { height: number, width: number, type: ModuleType };
+declare type ModuleSize = [string, ModuleProps];

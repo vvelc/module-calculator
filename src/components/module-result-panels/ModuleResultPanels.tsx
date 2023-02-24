@@ -64,9 +64,15 @@ export default function ModuleResultPanels({
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="primary"
-                    >
+                    >   
                         {moduleSize[0]}
                     </Typography>
                 </Box>
@@ -81,10 +87,16 @@ export default function ModuleResultPanels({
                     p={3}
                 >
                     <Typography variant="subtitle1">
-                        Your screen dimensions are
+                        Your {moduleSize[1].type} dimensions are
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="primary"
                     >
@@ -121,10 +133,16 @@ export default function ModuleResultPanels({
                     p={3}
                 >
                     <Typography variant="subtitle1">
-                        Your closest possible screen size is
+                        Your closest possible {moduleSize[1].type} size is
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="secondary"
                     >
@@ -143,10 +161,16 @@ export default function ModuleResultPanels({
                     p={3}
                 >
                     <Typography variant="subtitle1">
-                        Your screen will be
+                        Your {moduleSize[1].type} will be
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="secondary"
                     >
@@ -183,9 +207,15 @@ export default function ModuleResultPanels({
                     }}
                     p={3}
                 >
-                    <Typography variant="subtitle1">Your screen will need</Typography>
+                    <Typography variant="subtitle1">Your {moduleSize[1].type} will need</Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="initial"
                     >
