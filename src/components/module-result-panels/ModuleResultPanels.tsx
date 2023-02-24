@@ -64,9 +64,15 @@ export default function ModuleResultPanels({
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="primary"
-                    >
+                    >   
                         {moduleSize[0]}
                     </Typography>
                 </Box>
@@ -85,6 +91,12 @@ export default function ModuleResultPanels({
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="primary"
                     >
@@ -125,6 +137,12 @@ export default function ModuleResultPanels({
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="secondary"
                     >
@@ -147,6 +165,12 @@ export default function ModuleResultPanels({
                     </Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="secondary"
                     >
@@ -186,6 +210,12 @@ export default function ModuleResultPanels({
                     <Typography variant="subtitle1">Your {moduleSize[1].type} will need</Typography>
                     <Typography
                         variant="h3"
+                        sx={{
+                            fontSize: {
+                                xs: 36,
+                                md: 48
+                            }
+                        }}
                         fontWeight="medium"
                         color="initial"
                     >

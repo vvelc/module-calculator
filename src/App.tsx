@@ -180,7 +180,7 @@ export default function App() {
                             mb={3}
                         >
                             
-                            <Accordion elevation={0} defaultExpanded={true}>
+                            <Accordion elevation={0} defaultExpanded={false}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="accordion-canvas-content"
@@ -209,7 +209,7 @@ export default function App() {
                                 </AccordionDetails>
                                 
                             </Accordion>
-                            <Accordion elevation={0} defaultExpanded={false}>
+                            <Accordion elevation={0} defaultExpanded={true}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="accordion-result-content"
