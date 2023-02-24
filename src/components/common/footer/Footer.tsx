@@ -15,7 +15,7 @@ export default function Footer({}: Props) {
             className="footer"
             bgcolor={(theme) => theme.palette.divider}
             sx={{ flexShrink: 0 }}
-            mt={3}
+            mt={8}
             //mt={(theme) => `max(${theme.spacing(3)}, auto)`}
         >
             <Container maxWidth="lg">
